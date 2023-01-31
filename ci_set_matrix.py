@@ -3,11 +3,12 @@ import os
 import pathlib
 
 def set_output(name: str, value):
+    print(f"Setting GitHub actions output {name} to '{value}'")
     if "GITHUB_OUTPUT" in os.environ:
         with open(os.environ["GITHUB_OUTPUT"], "at") as f:
             print(f"{name}={value}", file=f)
     else:
-        print(f"Would set GitHub actions output {name} to '{value}'")
+        print("No output file")
 
 decoders = []
 for p in pathlib.Path("decoders").iterdir():
