@@ -13,4 +13,5 @@ for p in pathlib.Path("decoders").iterdir():
     if p.is_dir() and not p.name.startswith("__"):
         decoders.append(p.name)
 
+print(decoders)
 set_output("decoders", decoders)
