@@ -1,0 +1,6 @@
+[submodule "sigrok-test"]
+	path = sigrok-test
+	url = git://sigrok.org/sigrok-test
+[submodule "sigrok-dumps"]
+	path = sigrok-dumps
+	url = git://sigrok.org/sigrok-dumps

@@ -10,6 +10,10 @@ libsigrokdecode is a shared library written in C which provides the basic
 API for running sigrok protocol decoders. The protocol decoders themselves
 are written in Python.
 
+pysigrok-libsigrokdecode uses pysigrok to run the decoders instead of the C
+core. It also publishes them to pypi with entry points set for use as plugins
+into pysigrok.
+
 
 Status
 ------

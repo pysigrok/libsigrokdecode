@@ -1,0 +1,35 @@
+name: Decoder Tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+  compute-matrix:
+    runs-on: "ubuntu-latest"
+    outputs:
+      decoders: ${{ steps.set-matrix.outputs.decoders }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Set matrix
+        id: set-matrix
+        run: python -u ci_set_matrix.py
+
+  test-decoder:
+    runs-on: "ubuntu-latest"
+    strategy:
+      fail-fast: false
+      matrix:
+        decoder: ${{ fromJSON(needs.test.outputs.boards-aarch) }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+      - run: pip install .
+      - run: python pdtest -r -d ${{ matrix.board }}
