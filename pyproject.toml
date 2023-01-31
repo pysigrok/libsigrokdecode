@@ -7,6 +7,9 @@ name = "pysigrok-libsigrokdecode"
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 authors = [{name = "Scott Shawcroft", email = "scott@tannewt.org"}]
 dynamic = ["version", "description"]
+dependencies = [
+    "pysigrok",
+]
 
 [project.urls]
 Home = "https://github.com/pysigrok/libsigrokdecode"
