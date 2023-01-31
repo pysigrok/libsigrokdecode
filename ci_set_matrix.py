@@ -1,3 +1,4 @@
+import json
 import os
 import pathlib
 
@@ -14,4 +15,4 @@ for p in pathlib.Path("decoders").iterdir():
         decoders.append(p.name)
 
 print(decoders)
-set_output("decoders", decoders)
+set_output("decoders", json.dumps(sorted(decoders)))
