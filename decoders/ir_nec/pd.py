@@ -17,7 +17,7 @@
 ## along with this program; if not, see <http://www.gnu.org/licenses/>.
 ##
 
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 from .lists import *
 import sigrokdecode as srd
 

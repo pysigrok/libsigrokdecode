@@ -22,7 +22,7 @@
 ## SOFTWARE.
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 
 CFG_REGS = {
     0: [{'name': 'CH_NO', 'stbit': 7, 'nbits': 8}],

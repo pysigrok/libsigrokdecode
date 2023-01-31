@@ -22,7 +22,7 @@
 ## SOFTWARE.
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 
 # Millimeters per inch.
 mm_per_inch = 25.4

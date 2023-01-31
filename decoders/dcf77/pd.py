@@ -19,7 +19,7 @@
 
 import sigrokdecode as srd
 import calendar
-from common.srdhelper import bcd2int
+from ..common.srdhelper import bcd2int
 
 class SamplerateError(Exception):
     pass

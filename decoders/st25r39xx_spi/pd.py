@@ -19,7 +19,7 @@
 
 import sigrokdecode as srd
 from collections import namedtuple
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 from .lists import *
 
 Ann = SrdIntEnum.from_str('Ann', 'BURST_READ BURST_WRITE \

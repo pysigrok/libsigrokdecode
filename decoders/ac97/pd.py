@@ -24,7 +24,7 @@
 #   decoded register access).
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 
 class ChannelError(Exception):
     pass

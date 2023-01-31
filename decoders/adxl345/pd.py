@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 from .lists import *
 
 WORD_SIZE = 8

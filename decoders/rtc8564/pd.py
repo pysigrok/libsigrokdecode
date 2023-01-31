@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import bcd2int
+from ..common.srdhelper import bcd2int
 
 def reg_list():
     l = []

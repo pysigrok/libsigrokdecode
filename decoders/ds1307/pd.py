@@ -20,7 +20,7 @@
 
 import re
 import sigrokdecode as srd
-from common.srdhelper import bcd2int, SrdIntEnum
+from ..common.srdhelper import bcd2int, SrdIntEnum
 
 days_of_week = (
     'Sunday', 'Monday', 'Tuesday', 'Wednesday',

@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import bcd2int
+from ..common.srdhelper import bcd2int
 
 class Decoder(srd.Decoder):
     api_version = 3

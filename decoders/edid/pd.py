@@ -26,7 +26,7 @@
 #    - Extensions
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 import os
 
 St = SrdIntEnum.from_str('St', 'OFFSET EXTENSIONS HEADER EDID')

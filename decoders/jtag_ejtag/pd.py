@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import bin2int, SrdIntEnum
+from ..common.srdhelper import bin2int, SrdIntEnum
 
 class Instruction(object):
     IDCODE            = 0x01

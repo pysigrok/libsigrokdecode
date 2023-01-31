@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack_lsb
+from ..common.srdhelper import bitpack_lsb
 
 def disabled_enabled(v):
     return ['Disabled', 'Enabled'][v]

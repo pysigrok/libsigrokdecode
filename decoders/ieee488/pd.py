@@ -39,7 +39,7 @@
 #   only become necessary when the text lines' content shall get inspected.
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 
 '''
 OUTPUT_PYTHON format for stacked decoders:

@@ -35,7 +35,7 @@
 #   severely limited in its number of input channels, and dramatically
 #   widening the parallel decoder may be undesirable.
 
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 import json
 import sigrokdecode as srd
 import struct

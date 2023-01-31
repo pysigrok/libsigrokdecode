@@ -34,7 +34,7 @@ This is the list of <ptype> codes and their respective <pdata> values:
 """
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack_lsb
+from ..common.srdhelper import bitpack_lsb
 
 class Ann:
     HEADER, PROPORTIONAL, DIGITAL, FRAME_LOST, FAILSAFE, FOOTER, \

@@ -17,7 +17,7 @@
 ## along with this program; if not, see <http://www.gnu.org/licenses/>.
 ##
 
-from common.srdhelper import bitpack_lsb
+from ..common.srdhelper import bitpack_lsb
 import sigrokdecode as srd
 
 class Pin:

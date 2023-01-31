@@ -19,7 +19,7 @@
 
 import sigrokdecode as srd
 import re
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 from .lists import *
 
 L = len(cmds)

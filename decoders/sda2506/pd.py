@@ -19,7 +19,7 @@
 
 import re
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 
 Pin = SrdIntEnum.from_str('Pin', 'CLK DATA CE')
 

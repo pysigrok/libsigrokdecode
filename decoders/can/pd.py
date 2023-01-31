@@ -18,7 +18,7 @@
 ## along with this program; if not, see <http://www.gnu.org/licenses/>.
 ##
 
-from common.srdhelper import bitpack_msb
+from ..common.srdhelper import bitpack_msb
 import sigrokdecode as srd
 
 class SamplerateError(Exception):

@@ -18,7 +18,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 
 '''
 OUTPUT_PYTHON format:

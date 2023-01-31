@@ -18,8 +18,8 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
-from common.sdcard import (cmd_names, acmd_names)
+from ..common.srdhelper import SrdIntEnum
+from ..commonsdcard import (cmd_names, acmd_names)
 
 responses = '1 1b 2 3 7'.split()
 

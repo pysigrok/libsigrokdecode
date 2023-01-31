@@ -12,7 +12,8 @@ def set_output(name: str, value):
 
 decoders = []
 for p in pathlib.Path("decoders").iterdir():
-    if p.is_dir() and not p.name.startswith("__"):
+    test_dir = pathlib.Path("sigrok-test/decoder/test") / p.name
+    if p.is_dir() and not p.name.startswith("__") and test_dir.exists() and p.name != "common":
         decoders.append(p.name)
 
 print(decoders)

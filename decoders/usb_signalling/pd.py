@@ -19,7 +19,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import SrdIntEnum
+from ..common.srdhelper import SrdIntEnum
 
 '''
 OUTPUT_PYTHON format:

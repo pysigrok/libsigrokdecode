@@ -20,7 +20,7 @@
 ##
 
 import sigrokdecode as srd
-from common.srdhelper import SrdStrEnum
+from ..common.srdhelper import SrdStrEnum
 
 '''
 OUTPUT_PYTHON format:

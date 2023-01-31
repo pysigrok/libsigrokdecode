@@ -54,7 +54,7 @@
 #   as possible.
 
 import sigrokdecode as srd
-from common.srdhelper import bitpack
+from ..common.srdhelper import bitpack
 from math import ceil, floor
 
 '''

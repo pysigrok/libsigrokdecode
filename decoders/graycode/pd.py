@@ -20,7 +20,7 @@
 import math
 import sigrokdecode as srd
 from collections import deque
-from common.srdhelper import bitpack, bitunpack
+from ..common.srdhelper import bitpack, bitunpack
 
 def gray_encode(plain):
     return plain & (plain >> 1)
