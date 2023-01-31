@@ -34,4 +34,4 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install .
-      - run: python pdtest -r -d ${{ matrix.board }}
+      - run: python pdtest -r -d ${{ matrix.decoder }}
