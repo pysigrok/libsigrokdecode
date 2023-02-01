@@ -19,7 +19,7 @@
 
 import sigrokdecode as srd
 from ..common.srdhelper import SrdIntEnum, SrdStrEnum
-from ..commonsdcard import (cmd_names, acmd_names, accepted_voltages, sd_status)
+from ..common.sdcard import (cmd_names, acmd_names, accepted_voltages, sd_status)
 
 responses = '1 1b 2 3 6 7'.split()
 token_fields = 'START TRANSMISSION CMD ARG CRC END'.split()
